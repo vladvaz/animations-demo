@@ -1,0 +1,35 @@
+<div class="content">
+    <h2>Router Animations</h2>
+
+    <p>Route animations use the <code>route-outlet</code> for triggering the transitions beetween
+        different pages.
+    </p>
+    <p>The angular documentation indicates the next code to be added to the application component html.</p>
+
+    <code>app.component.html</code>
+    <markdown [data]="markdownHtml"></markdown>
+    <p></p>
+
+    <p>And this code in the component controller.</p>
+
+    <code>app.component.ts</code>
+    <markdown [data]="markdownTs"></markdown>
+    <p></p>
+
+    <p>We mark the routes to be animated in the <code>app-routing.module.ts</code>. We can have different animations for
+        each route.</p>
+    <code>app-routing.module.ts</code>
+    <markdown [data]="markdownAppRouting"></markdown>
+
+    <p>Then we can define the transitions in a typescript file <code>routes-animation.ts</code> and import it to
+        <code>app.component.ts</code>
+    </p>
+
+    <code>routes-animation.ts</code>
+    <markdown [data]="markdownRoutesAnim"></markdown>
+    <p></p>
+
+    <code>app-routing.module.ts</code>
+    <markdown [data]="markdownImportAnim"></markdown>
+
+</div>

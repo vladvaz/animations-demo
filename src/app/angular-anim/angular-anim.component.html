@@ -1,0 +1,38 @@
+<div class="content">
+    <h2>Angular Animations</h2>
+
+    <p>We can define animations in Angular setting the metadata <code>animations: </code> within the component decorator
+        <code>@Component()</code>.
+    </p>
+    <p>There are several functions available:</p>
+
+    <markdown [data]="markdownAnimFunc"></markdown>
+    <p></p>
+
+    <p>We can define a <code>trigger</code> to start the animation. This trigger can be called inside the component
+        controller.</p>
+
+    <p>Inside the trigger we can define the <code>state</code> where we place the rules for the CSS. We use the
+        <code>style</code> function for that.
+    </p>
+
+    <p>Next we define the <code>transition</code>, this is the animation rule between two states. Inside it, we put the
+        <code>animation</code> function with the timings and the curves.
+    </p>
+
+    <div class="text-container">
+        <div class="text-box" (click)=changeState() [@textTrigger]="currentState">
+            <p><span class="bold">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry.
+                Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                1960s
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+
+        <markdown [data]="markdownTextBlock"></markdown>
+    </div>
+</div>

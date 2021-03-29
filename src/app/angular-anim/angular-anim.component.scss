@@ -1,0 +1,20 @@
+.text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 16px;
+
+    .text-box {
+        padding: 8px;
+        display: block;
+        height: 500px;
+        width: 250px;
+        background-color: rgb(242, 242, 242);
+        box-shadow: 6px 6px 41px 0px rgb(171, 171, 171);
+        cursor: pointer;
+        
+        .bold {
+            font-weight: 600;
+        }
+    }
+}

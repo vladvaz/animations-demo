@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .container-column {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+}
+
+.rotate {
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
